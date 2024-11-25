@@ -1,0 +1,213 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* Estilos de la sección */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del párrafo */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Estilo del blockquote */
+blockquote {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 5px solid #444;
+    background-color: #f9f9f9;
+}
+
+/* Estilo Caja 1 */
+
+.box1 {
+
+    background-color: aquamarine;
+    border: 1px black solid;
+    padding: 2rem;
+    margin: 10px;
+    box-shadow: 5px 5px 10px 1px;
+
+}
+
+/* Estilo Caja 2 */
+
+.box2 {
+
+    background-color: rgb(44, 167, 126);
+    border: 2px black double;
+    padding: 2rem;
+    margin: 10px;
+    box-shadow: 5px 5px 10px 1px;
+
+}
+
+/* Estilo Relativo */
+
+.relativeBox {
+
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: aquamarine;
+    padding: 2rem;
+
+}
+
+/* Estilo absoluto */
+
+.absoluteBox {
+
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(115, 143, 143);
+    font-size: 2px;
+
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+
+    body {
+
+        background-color: rgb(212, 78, 78);
+
+    }
+
+    h1 {
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+/* Grid */
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Divide el espacio en 4 columnas iguales */
+    gap: 1rem;
+    justify-items: stretch; /* Asegura que los elementos ocupen todo el ancho disponible */
+}
+
+.containerGrid div {
+    background-color: aquamarine;
+    border: 1px black solid;
+    width: 100%; /* Ocupa el ancho completo de la columna */
+    height: 50px;
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Asegura que el texto esté alineado en el centro */
+    border-radius: 5px;
+}
+
+/* Animaciones */
+
+.animacion{
+
+    background-color: rgb(97, 231, 187);
+    border: 1px black solid;
+    font-size: 2rem;
+    transition: 1s ease;
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Asegura que el texto esté alineado en el centro */
+    margin: auto;
+    gap: 1rem;
+
+}
+
+.animacion:hover{
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+.mover{
+
+    background-color: rgb(97, 231, 187);
+    border: 1px black solid;
+    font-size: 2rem;
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Asegura que el texto esté alineado en el centro */
+    margin: auto;
+    gap: 1rem;
+    animation: moverObjeto 1s infinite;
+
+}
+
+@keyframes moverObjeto {
+
+    0% {
+
+        transform: translateX(-100px);
+
+    }
+
+    50% {
+
+        transform: translateX(100px);
+    
+    }
+
+    100% {
+
+        transform: translateX(-100px);
+
+    }
+
+}
+
+.titulo {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #030303;
+    padding-bottom: 0.5rem;
+}
